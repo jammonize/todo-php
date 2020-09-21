@@ -1,18 +1,18 @@
 <?php 
+  // ADD A TASK
+  include('add.php');
+
   // CONFIG
   include ('config/db_config.php'); 
 
-    // create sql
-    $sql = 'SELECT id, task FROM todos';
+  // create sql
+  $sql = 'SELECT id, task FROM todos';
 
-    // query server with sql
-    $result = mysqli_query($conn, $sql);
+  // query server with sql
+  $result = mysqli_query($conn, $sql);
 
-    // create array from result
-    $todos = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-  // ADD A TASK
-  include('add.php');
+  // create array from result
+  $todos = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
   // DELETE A TASK
   include('delete.php');
