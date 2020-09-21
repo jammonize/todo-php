@@ -8,8 +8,8 @@
     <body>
 
     <nav class="nav nav-pills d-flex justify-content-end m-4">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="index.php" class="nav-link">Home</a>
+        <a href="contact.php" class="nav-link">Contact</a>
         
     </nav>
         

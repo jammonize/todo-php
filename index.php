@@ -7,10 +7,8 @@
 
   // create sql
   $sql = 'SELECT id, task FROM todos';
-
   // query server with sql
   $result = mysqli_query($conn, $sql);
-
   // create array from result
   $todos = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -55,5 +53,10 @@
   </div>
 </form>
 
-<!-- FOOTER -->
-<?php include ('templates/footer.php'); ?>
+
+<?php 
+
+  // FOOTER
+  include ('templates/footer.php'); 
+
+?>
